@@ -1,0 +1,263 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x10_Male J102
+U 1 1 5E287471
+P 6200 2100
+F 0 "J102" H 6172 1982 50  0000 R CNN
+F 1 "Breakout_11-20" H 6172 2073 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 6200 2100 50  0001 C CNN
+F 3 "~" H 6200 2100 50  0001 C CNN
+	1    6200 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x10_Male J101
+U 1 1 5E285879
+P 3450 2000
+F 0 "J101" H 3350 2450 50  0000 C CNN
+F 1 "Breakout_01-10" H 3000 2000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 3450 2000 50  0001 C CNN
+F 3 "~" H 3450 2000 50  0001 C CNN
+	1    3450 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1600 4550 1600
+Wire Wire Line
+	3650 1700 4550 1700
+Wire Wire Line
+	3650 1800 4550 1800
+Wire Wire Line
+	3650 1900 4550 1900
+Wire Wire Line
+	3650 2000 4550 2000
+Wire Wire Line
+	3650 2100 4550 2100
+Wire Wire Line
+	3650 2200 4550 2200
+Wire Wire Line
+	3650 2400 4550 2400
+Wire Wire Line
+	3650 2500 3750 2500
+Wire Wire Line
+	4950 2500 6000 2500
+Wire Wire Line
+	4950 2400 6000 2400
+Wire Wire Line
+	4950 2300 6000 2300
+Wire Wire Line
+	4950 2200 6000 2200
+Wire Wire Line
+	4950 2100 6000 2100
+Wire Wire Line
+	4950 2000 6000 2000
+Wire Wire Line
+	4950 1900 6000 1900
+Wire Wire Line
+	4950 1800 6000 1800
+Wire Wire Line
+	4950 1700 6000 1700
+Wire Wire Line
+	4950 1600 6000 1600
+$Comp
+L Connector:Conn_01x02_Female J103
+U 1 1 5E28D8D0
+P 2200 3350
+F 0 "J103" H 2092 3025 50  0000 C CNN
+F 1 "Alt_Pwr" H 2092 3116 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 2200 3350 50  0001 C CNN
+F 3 "~" H 2200 3350 50  0001 C CNN
+	1    2200 3350
+	1    0    0    1   
+$EndComp
+Text Label 4550 2500 2    50   ~ 0
+GND
+$Comp
+L power:GND #PWR0101
+U 1 1 5E28F67D
+P 3750 2650
+F 0 "#PWR0101" H 3750 2400 50  0001 C CNN
+F 1 "GND" H 3755 2477 50  0000 C CNN
+F 2 "" H 3750 2650 50  0001 C CNN
+F 3 "" H 3750 2650 50  0001 C CNN
+	1    3750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2650 3750 2500
+Connection ~ 3750 2500
+Wire Wire Line
+	3750 2500 4550 2500
+Text Label 4550 1700 2    50   ~ 0
+DOUT
+Text Label 4550 1800 2    50   ~ 0
+DIN_CONFIG
+Text Label 4550 1900 2    50   ~ 0
+DIO12
+Text Label 4550 2000 2    50   ~ 0
+~RESET
+Text Label 4550 2100 2    50   ~ 0
+PWM0_RSSI_DIO10
+Text Label 4550 2200 2    50   ~ 0
+PWM_DIO11
+Text Label 4550 2400 2    50   ~ 0
+~DTR~_SLEEP_RQ_DIO18
+Text Label 4950 2500 0    50   ~ 0
+DIO4_SPI_MOSI
+Text Label 4950 2400 0    50   ~ 0
+DIO7_~CTS
+Text Label 4950 2300 0    50   ~ 0
+ON_~SLEEP
+Text Label 4950 2200 0    50   ~ 0
+VREF
+Text Label 4950 2100 0    50   ~ 0
+DIO5_ASSOC
+Text Label 4950 2000 0    50   ~ 0
+DIO6_~RTS
+Text Label 4950 1900 0    50   ~ 0
+DIO3_AD3_SPI_SSEL
+Text Label 4950 1800 0    50   ~ 0
+DIO2_AD2_SPI_CLK
+Text Label 4950 1700 0    50   ~ 0
+DIO1_AD1_SPI_ATTN
+Text Label 4950 1600 0    50   ~ 0
+DIO0_AD0
+Wire Wire Line
+	2000 3250 1600 3250
+Text Label 1600 3250 0    50   ~ 0
+VCC
+Text Label 1600 3350 0    50   ~ 0
+GND
+$Comp
+L power:GND #PWR0102
+U 1 1 5E2A31D4
+P 1500 3450
+F 0 "#PWR0102" H 1500 3200 50  0001 C CNN
+F 1 "GND" H 1505 3277 50  0000 C CNN
+F 2 "" H 1500 3450 50  0001 C CNN
+F 3 "" H 1500 3450 50  0001 C CNN
+	1    1500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3450 1500 3350
+Wire Wire Line
+	1500 3350 2000 3350
+$Comp
+L xbee-adapter-rescue:DIGI_XBEE-XBee-Adapter H101
+U 1 1 5E2A5E21
+P 5150 4100
+F 0 "H101" H 6000 5200 60  0000 C CNN
+F 1 "DIGI_XBEE" H 5850 5050 60  0000 C CNN
+F 2 "XBee-Adapter:XBEE_S2C" H 4500 3900 60  0001 C CNN
+F 3 "" H 4500 3900 60  0000 C CNN
+	1    5150 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3050 5150 2950
+Wire Wire Line
+	5150 2950 4900 2950
+Wire Wire Line
+	5150 5100 5150 5350
+$Comp
+L power:GND #PWR0103
+U 1 1 5E2A7E8A
+P 5150 5350
+F 0 "#PWR0103" H 5150 5100 50  0001 C CNN
+F 1 "GND" H 5155 5177 50  0000 C CNN
+F 2 "" H 5150 5350 50  0001 C CNN
+F 3 "" H 5150 5350 50  0001 C CNN
+	1    5150 5350
+	1    0    0    -1  
+$EndComp
+Text Label 4550 1600 2    50   ~ 0
+VCC
+Wire Wire Line
+	4050 3850 2800 3850
+Wire Wire Line
+	4050 3950 2800 3950
+Wire Wire Line
+	4050 4050 2800 4050
+Wire Wire Line
+	4050 4150 2800 4150
+Wire Wire Line
+	4050 4250 2800 4250
+Wire Wire Line
+	4050 4350 2800 4350
+Wire Wire Line
+	4050 4550 2800 4550
+Wire Wire Line
+	7100 3750 6250 3750
+Wire Wire Line
+	7100 3850 6250 3850
+Wire Wire Line
+	7100 3950 6250 3950
+Wire Wire Line
+	7100 4050 6250 4050
+Wire Wire Line
+	7100 4150 6250 4150
+Wire Wire Line
+	7100 4250 6250 4250
+Wire Wire Line
+	7100 4350 6250 4350
+Wire Wire Line
+	7100 4450 6250 4450
+Wire Wire Line
+	7100 4550 6250 4550
+Wire Wire Line
+	7100 4650 6250 4650
+Text Label 2800 3850 0    50   ~ 0
+DOUT
+Text Label 2800 3950 0    50   ~ 0
+DIN_CONFIG
+Text Label 2800 4050 0    50   ~ 0
+DIO12
+Text Label 2800 4150 0    50   ~ 0
+~RESET
+Text Label 2800 4250 0    50   ~ 0
+PWM0_RSSI_DIO10
+Text Label 2800 4350 0    50   ~ 0
+PWM_DIO11
+Text Label 2800 4550 0    50   ~ 0
+~DTR~_SLEEP_RQ_DIO18
+Text Label 5150 5250 0    50   ~ 0
+GND
+Text Label 4900 2950 0    50   ~ 0
+VCC
+Text Label 7100 4650 2    50   ~ 0
+DIO4_SPI_MOSI
+Text Label 7100 4550 2    50   ~ 0
+DIO7_~CTS
+Text Label 7100 4450 2    50   ~ 0
+ON_~SLEEP
+Text Label 7100 4350 2    50   ~ 0
+VREF
+Text Label 7100 4250 2    50   ~ 0
+DIO5_ASSOC
+Text Label 7100 4150 2    50   ~ 0
+DIO6_~RTS
+Text Label 7100 4050 2    50   ~ 0
+DIO3_AD3_SPI_SSEL
+Text Label 7100 3950 2    50   ~ 0
+DIO2_AD2_SPI_CLK
+Text Label 7100 3850 2    50   ~ 0
+DIO1_AD1_SPI_ATTN
+Text Label 7100 3750 2    50   ~ 0
+DIO0_AD0
+NoConn ~ 3650 2300
+$EndSCHEMATC

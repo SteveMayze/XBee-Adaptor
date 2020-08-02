@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name XBee-Adapter)(type Legacy)(uri ${KIPRJMOD}/lib/XBee-Adapter.lib)(options "")(descr ""))
+  (lib (name xbee-adapter-rescue)(type Legacy)(uri ${KIPRJMOD}/xbee-adapter-rescue.lib)(options "")(descr ""))
+)
